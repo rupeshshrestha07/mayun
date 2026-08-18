@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Mayun ♡ — From Rupesh</title>
+<meta name="theme-color" content="#090a12">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="lock">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="lock-card">
+    <div class="logo">♡</div><div class="eyebrow">A tiny world made for you</div>
+    <h1>Hi, Mayun.</h1>
+    <p>There is something waiting inside.<br>Only one person has the PIN. 🤍</p>
+    <input id="pin" class="pin" inputmode="numeric" maxlength="6" placeholder="••••••" aria-label="Enter PIN">
+    <button class="primary" id="unlock">Unlock my heart</button>
+    <div id="error" class="error"></div>
+  </div>
+</div>
+
+<div id="app">
+<nav class="nav"><a href="#home">Home</a><a href="#memories">Memories</a><a href="#questions">For You</a><a href="#sorry">My Apology</a><a href="#forever">♡</a></nav>
+<main>
+<section class="hero" id="home"><div class="hero-inner"><div class="tiny">For my Maya · from Rupesh</div><h1>Hey, <em>Mayun.</em><br>This one's for you.</h1><p>I made a little corner of the internet just for us — our memories, a few questions from my heart, an apology I really mean, and one thing I never want you to forget.</p><div class="hero-cta"><a class="primary" style="width:auto;text-decoration:none" href="#memories">Come inside ♡</a><a class="secondary" href="#questions" style="text-decoration:none">Something for you</a></div></div></section>
+
+<section id="memories"><div class="section-head"><div class="eyebrow">Chapter one</div><h2>Little pieces of us.</h2><p>Tap any photo. Some memories deserve to be looked at twice.</p></div><div class="gallery" id="gallery"></div></section>
+
+<section id="questions"><div class="section-head"><div class="eyebrow">Chapter two · Just between us</div><h2>Tell me what's in your heart.</h2><p>No points. No right answers. No pressure. Just honest little pieces of you for your bacha to keep.</p></div>
+<div class="love-notes">
+<div class="note-intro"><div class="ribbon">For my Mayun ♡</div><h3>Leave me a few words?</h3><p>Take your time. Write as much or as little as you want. I want to know the things that live in your heart, even the tiny things you might normally keep to yourself. 🤍</p></div>
+<form id="loveForm" action="https://formsubmit.co/rrupeshsthaa@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Mayun's answers for Rupesh ♡">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+
+<input type="hidden" name="_to" value="rrupeshsthaa@gmail.com">
+<input type="hidden" name="_replyto" value="Mayun">
+<input type="hidden" name="_url" value="Maya Love Experience"><div class="question-progress"><span id="questionCount">Question 1 of 10</span><div class="progress-track"><div id="progressBar"></div></div></div><div id="questionStage">
+<label class="single-question active" data-question="1">
+      <span class="number">01</span>
+      <span class="prompt">What do you love most about us?</span>
+      <textarea name="q1" placeholder="Tell me in your own words..." required></textarea>
+      <button type="button" class="primary next-question" data-next="2">Next ♡</button>
+    </label>
+<label class="single-question" data-question="2">
+      <span class="number">02</span>
+      <span class="prompt">What's one memory you never want us to forget?</span>
+      <textarea name="q2" placeholder="The memory that always makes you smile..." ></textarea>
+      <button type="button" class="primary next-question" data-next="3">Next ♡</button>
+    </label>
+<label class="single-question" data-question="3">
+      <span class="number">03</span>
+      <span class="prompt">What do you want your bacha to improve?</span>
+      <textarea name="q3" placeholder="Be honest. Your bacha is listening. ♡" ></textarea>
+      <button type="button" class="primary next-question" data-next="4">Next ♡</button>
+    </label>
+<label class="single-question" data-question="4">
+      <span class="number">04</span>
+      <span class="prompt">What do you want us to do together someday?</span>
+      <textarea name="q4" placeholder="A dream, a trip, something silly..." ></textarea>
+      <button type="button" class="primary next-question" data-next="5">Next ♡</button>
+    </label>
+<label class="single-question" data-question="5">
+      <span class="number">05</span>
+      <span class="prompt">What song reminds you of us?</span>
+      <textarea name="q5" placeholder="A song, a lyric, or even a playlist..." ></textarea>
+      <button type="button" class="primary next-question" data-next="6">Next ♡</button>
+    </label>
+<label class="single-question" data-question="6">
+      <span class="number">06</span>
+      <span class="prompt">What does “bacha” mean to you now?</span>
+      <textarea name="q6" placeholder="I'm curious about this one..." ></textarea>
+      <button type="button" class="primary next-question" data-next="7">Next ♡</button>
+    </label>
+<label class="single-question" data-question="7">
+      <span class="number">07</span>
+      <span class="prompt">What's something small I do that makes you smile?</span>
+      <textarea name="q7" placeholder="Even the tiniest thing counts." ></textarea>
+      <button type="button" class="primary next-question" data-next="8">Next ♡</button>
+    </label>
+<label class="single-question" data-question="8">
+      <span class="number">08</span>
+      <span class="prompt">What made you realize you liked me?</span>
+      <textarea name="q8" placeholder="Take me back to that moment..." ></textarea>
+      <button type="button" class="primary next-question" data-next="9">Next ♡</button>
+    </label>
+<label class="single-question" data-question="9">
+      <span class="number">09</span>
+      <span class="prompt">Was there a moment when you realized I was becoming special to you?</span>
+      <textarea name="q9" placeholder="Maybe it was a tiny moment. Maybe not. ♡" ></textarea>
+      <button type="button" class="primary next-question" data-next="10">Next ♡</button>
+    </label>
+<label class="single-question" data-question="10">
+      <span class="number">10</span>
+      <span class="prompt">What do you hate the most about me?</span>
+      <textarea name="q10" placeholder="Okay... I promise I can handle the truth. 😭" ></textarea>
+      <button type="button" class="primary next-question" data-next="11">Review my answers ♡</button>
+    </label>
+</div>
+<div id="reviewStage" class="review-stage">
+  <div class="review-icon">♡</div>
+  <h3>Ready to send?</h3>
+  <p>Read your answers one last time, then send them to your bacha.</p>
+  <button class="primary send-btn" type="submit">Send it to my bacha ♡</button>
+</div>
+<div id="formStatus" class="form-status"></div>
+</form>
+</div></section>
+
+<section id="sorry"><div class="section-head"><div class="eyebrow">Chapter three · From my heart</div><h2>I'm sorry, Mayun.</h2></div>
+<div class="apology"><div class="apology-side"><div class="heart">♡</div><h3>I mean this.</h3><p>Not just because I want things to be okay, but because I understand that trust is something I have to earn back through my actions.</p></div>
+<article class="letter"><div class="to">Dear Maya,</div>
+<p>Maya, I am really sorry for everything I did. I know what I did was so bad, and I know that saying sorry cannot simply make it all disappear. I know I can't make everything up to you just yet, but I want you to know that I understand the weight of what I did.</p>
+<p>I don't expect you to forget it just because I apologized. I don't expect everything to suddenly feel normal again. I know that some things take time, and I know that if I really want to make things right, I have to show you through my actions, not just through words.</p>
+<p>I will do everything I can to make things right. I want to learn from my mistakes, become better, and be more careful with your heart. You mean far too much to me for me to take your love, your trust, or your presence for granted.</p>
+<p>I love you so much, sanu. You are, and you will always be, my everything. I know I haven't always acted like the person you deserve, and that hurts me to admit. But I want to become that person. I want to be someone who makes you feel safe, loved, respected, understood, and appreciated.</p>
+<p>I am really sorry, Maya. Thank you so much for giving me another chance. I don't want to waste it. I will win back your trust, your love, and your confidence in me one step at a time. I know I have to earn those things again, and I am willing to be patient and prove it.</p>
+<p>I promise I will do my best to never repeat what I did again. I know a promise means very little without actions behind it, so I want my actions from now on to speak louder than this letter ever could.</p>
+<p>There will probably be days when I don't get everything right. I'm still learning, still growing, and still trying to become better. But one thing I don't want to change is how much I love you. I want to keep choosing you, keep caring for you, keep making memories with you, and keep finding little reasons to make you smile.</p>
+<p>I love you, and I always will. You mean everything to me, sanu. Thank you for giving your bacha another chance. I am really, truly sorry.</p>
+<div class="signature">Always your bacha,<br>Rupesh ♡</div></article></div></section>
+
+<section class="final" id="forever"><div id="hearts"></div><div class="final-inner"><div class="eyebrow">The last page</div><h2>I love<br><span>you.</span></h2><p>Mayun, no webpage and no number of words can properly explain how much you mean to me. I just hope this little place reminds you that there is a bacha who loves you deeply, is grateful for another chance, and wants to make many more beautiful memories with you.</p><button class="music" onclick="window.open('https://youtu.be/GH9BQslHCQo?si=a6AdjzhgVlF0eoOl','_blank')">♫ Play our song</button><div style="margin-top:14px;color:#8d91a0;font-size:12px">And yes… more Yabesh Thapa nights with you, please.</div></div></section>
+</main><footer>Made with love by Rupesh, for Mayun ♡</footer>
+</div>
+
+<div class="modal" id="modal"><button class="close" id="close">×</button><img id="modalImg" alt="Memory"><div class="modal-caption" id="modalCaption"></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
